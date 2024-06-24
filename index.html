@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="container">
+        <form action="#" id="survey-form">
+            <label for="name-label" id="name-label">
+                Name
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <label for="email-label" id="email-label">
+                Email
+                <input id="email" type="email" placeholder="Enter your Email" required>
+            </label>
+            <label for="number-label" id="number-label">
+                Age (optional)
+                <input id="number" type="number" placeholder="Age" min="12" max="120">
+            </label>
+            <label for="role">
+                Which option best describes your current role?
+                <select name="role" id="dropdown" required>
+                    <option value="none" disabled selected>select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                    <option value="4">Prefer Not to Say</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+            <label for="recommendation" class="recommend">
+                Would you recommend freeCodeCamp to a friend?
+                <br><input type="radio" name="status" id="status1" value="1"> Definitely
+                <br><input type="radio" name="status" id="status2" value="2"> Maybe
+                <br><input type="radio" name="status" id="status3" value="3"> Not Sure
+            </label>
+            <label for="fav-feature">
+                <br>What is your favorite feature on freeCodeCamp?
+                <select name="feature" id="feature">
+                    <option value="none" disabled selected>Select an option</option>
+                    <option value="1">Challenges</option>
+                    <option value="2">Projects</option>
+                    <option value="3">Community</option>
+                    <option value="4">Open Source</option>
+                </select>
+            </label>
+            <label for="improvement" class="improve">
+                <br>What would you like to see improved? (Check all that apply)
+                <br><br><input type="checkbox" name="front-end" value="front-end"> Front-end Projects
+                <br><input type="checkbox" name="back-end" value="back-end"> Back-end Projects
+                <br><input type="checkbox" name="data-visualization" value="data"> Data-Visualization
+                <br><input type="checkbox" name="Challenges" value="Challenges"> Challenges
+                <br><input type="checkbox" name="open-source" value="open-source"> Open Source Community
+                <br><input type="checkbox" name="gitter" value="gitter"> Gitter help rooms
+                <br><input type="checkbox" name="videos" value="videos"> Videos
+                <br><input type="checkbox" name="meetup" value="meetup"> City Meetups
+                <br><input type="checkbox" name="wiki" value="wiki"> Wiki
+                <br><input type="checkbox" name="forum" value="forum"> Forum
+                <br><input type="checkbox" name="add-courses" value="add-courses"> Additional Courses
+            </label>
+            <label for="comments">
+                <br>Any comments or suggestions?
+                <textarea name="comments" id="suggestions" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
+            </label>
+            <label for="submit">
+                <input type="submit" value="Submit" id="submit">
+            </label>
+        </form>
+    </div>
+</body>
+</html>
